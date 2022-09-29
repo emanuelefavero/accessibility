@@ -51,3 +51,19 @@
 - some say that underline reduces readability. You can use properties like `text-underline-offset` and `text-decoration-color` to improve readability
 
 - add text and/or icons to communicate meaning in addition to color
+
+## meaningful and decorative images
+
+- some images are meaningful and some are decorative. Meaningful images should have an `alt` attribute. Decorative images should have an empty `alt` attribute.
+
+- another method for creating decorative images is tu use css `background-image` property.
+
+- icons can also be created with font icons. Font icons are accessible because they are text. add `role="img` and `aria-hidden="true"` to the element that contains the icon. (`<i class="navbarIcon" role="img" aria-hidden="true"></i>`)
+
+- another method for creating decorative images is to add `aria=hidden="true"`. for example to an svg `<svg aria-hidden="true">…</svg>`
+
+- the value of the alt attribute for meaningful images should be descriptive. It should describe the **intention** of the image. Example for a logo in the header that also takes you home: `<img src="COMPANY_logo.png" alt="Home of COMPANY">`
+
+- to make background images, svg and font icons meaningful we can add `role="img"`, `aria-label` and `aria-labelledby`.
+
+- REMEMBER: an image could have a meaning even if is not interactive. Like a five star image that represents a rating. (meaningful image)
